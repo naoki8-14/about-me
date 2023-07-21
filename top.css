@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+    .h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    } 
 .body{
     background-image: url(img/emmanuel-phaeton-LFdLnnzvJw4-unsplash.jpg);
     
@@ -9,39 +15,78 @@
 }
 
 .btn-burger {
+
     position: absolute;
+
     top: 5px;
+
     right: 10px;
+
     z-index: 2;
+
     display: block;
+
     width: 44px;
+
     height: 44px;
+
     background: url(img/ハンバーガー.png) center center / 35px 20px no-repeat;
+
     cursor: pointer;
+
 }
+
+
+
 
 .nav-toggle:checked ~ .btn-burger{
+
     background : url(img/ハンバーガー.png)center center / cover no-repeat;
+
 }
+
+
+
 
 .nav{
-    padding-top: 10px;
+
+    padding-top: 0px;
+
     background: url(img/ハンバーガー.png)center center / cover no-repeat;
-}
-.nav-list{
-    display: none;
-    margin: 0;
-    padding-bottom: 10px;
-}
-.nav-list li {
-    margin: 0;
-    padding: 10px;
-}
-.nav-list a{
-    display: block;
-    color: #fff;
+
 }
 
-.nav-togglechecked ~ .nav .nav-list{
+.nav-list{
+
+    display: none;
+
+    margin: 0;
+
+    padding-bottom: 0px;
+
+}
+
+.nav-list li {
+
+    margin: 0;
+
+    padding: 0px;
+
+}
+
+.nav-list a{
+
     display: block;
+
+    color: #fff;
+
+}
+
+
+
+
+.nav-toggle:checked ~ .nav .nav-list{
+
+    display: block;
+
 }
